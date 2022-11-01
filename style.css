@@ -6,7 +6,7 @@
 }
 
 body {
-    background-color: #333;
+    background-color: rgb(32, 41, 56);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -16,25 +16,21 @@ body {
 }
 
 .title {
-    display: block;
-    margin: 20px;
-}
-
-h1 {
-    font-size: 63px;
-    color: azure;
-}
-
-p {
-    font-size: 20px;
-    color: aliceblue;
+    display: flex;
+    margin: 30px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 69px;
+    color: rgb(225, 234, 249);
+    font-weight: bold;
 }
 
 #game-board {
     display: grid;
     grid-template-columns: repeat(var(--grid-size), var(--cell-size));
     grid-template-rows: repeat(var(--grid-size), var(--cell-size));
-    background-color: #CCC;
+    background-color: rgb(127, 140, 163);
     gap: var(--cell-gap);
     border-radius: 1vmin;
     padding: var(--cell-gap);
@@ -42,7 +38,7 @@ p {
 }
 
 .cell {
-    background-color: #AAA;
+    background-color: rgb(81, 87, 109);
     border-radius: 10px;
 }
 
